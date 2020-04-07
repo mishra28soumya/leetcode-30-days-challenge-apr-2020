@@ -35,7 +35,7 @@ import java.util.*;
 class Solution {
     public int countElements(int[] arr) {
         
-        if (arr.length <1){
+        if (arr.length <2){
             return 0;
         }
        
