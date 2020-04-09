@@ -42,7 +42,6 @@ class Solution {
      public String removeBackspace(String s){
          
         Stack<Character> q = new Stack<Character>();
-        String res = "";
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i)!='#'){
                 q.push(s.charAt(i));
@@ -52,10 +51,7 @@ class Solution {
                 
             }
         }
-         while(!q.isEmpty()){
-             res = res+q.pop();
-         }
-         return res;
+        return q.toString();
      }
 }
 
